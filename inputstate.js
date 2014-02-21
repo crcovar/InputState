@@ -134,10 +134,7 @@ var InputState = (function () {
 		},
 		onMouseUp = function (event) {
 			inputState.mouse[event.button] = false;
-		},
-		/*onMouseClick = function (event) {
-		
-		};*/
+		};
 		
 	window.onload = function () {
 		document.addEventListener('keydown', onKeyDown, true);
@@ -145,7 +142,6 @@ var InputState = (function () {
 		document.addEventListener('mousemove', onMouseMove, true);
 		document.addEventListener('mousedown', onMouseDown, true);
 		document.addEventListener('mouseup', onMouseUp, true);
-		//document.addEventListener('mouseclick', onMouseClick, true);
 	};
 	
 	return inputState;
